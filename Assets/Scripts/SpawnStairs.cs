@@ -5,7 +5,12 @@ using UnityEngine;
 public class SpawnStairs : MonoBehaviour
 {
     [SerializeField] private GameObject stairsPrefab;
-    [SerializeField] private Transform stairwell;
+    private Transform stairwell;
+
+    private void Start()
+    {
+        stairwell = GameObject.FindGameObjectWithTag("Stairwell").GetComponent<Transform>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
