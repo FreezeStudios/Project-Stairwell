@@ -22,6 +22,11 @@ public class SpawnStairs : MonoBehaviour
             Vector3 modPos = new Vector3(pos.x,pos.y -5f, pos.z);
             GameObject go = Instantiate(stairsPrefab, modPos, rot,stairwell);
             go.name = "Full_Stairs " + stairwellChildCount.ToString();
+            if(PlayerPrefs.GetInt("BloodSpawnChance") == 100)
+            {
+                PlayerPrefs.SetInt("BloodSpawnChance", 0);
+                go.transform.GetChild(go.transform.childCount - 1).GetComponent<MeshRenderer>().enabled = true;
+            }
             Destroy(gameObject);
         }
     }
