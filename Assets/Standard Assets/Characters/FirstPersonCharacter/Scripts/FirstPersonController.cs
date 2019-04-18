@@ -236,7 +236,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
-            m_MouseLook.LookRotation (transform, m_Camera.transform);
+            if(PlayerPrefs.GetInt("PausePlayer") == 0)
+                m_MouseLook.LookRotation (transform, m_Camera.transform);
         }
 
 
