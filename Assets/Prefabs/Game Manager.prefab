@@ -14,10 +14,11 @@ GameObject:
   - component: {fileID: 5658445945892315181}
   - component: {fileID: 787856347417970372}
   - component: {fileID: 7847211390754189746}
+  - component: {fileID: 8357060924404744089}
   - component: {fileID: 787856347417970369}
   m_Layer: 0
   m_Name: Game Manager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,6 +103,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   larry: {fileID: 0}
   scareSound: {fileID: 8300000, guid: 03f367a52b2149e479451283f5184bdc, type: 3}
+--- !u!114 &8357060924404744089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787856347417970373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d2e1be4c95ffa469a022583bb4f582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rawImage: {fileID: 0}
 --- !u!82 &787856347417970369
 AudioSource:
   m_ObjectHideFlags: 0

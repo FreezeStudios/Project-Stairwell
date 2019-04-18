@@ -14,17 +14,17 @@ public class TimeManager : MonoBehaviour
         mannequin = GetComponent<MannequinScare>();
 
         //Starting Timers
-        Invoke("ExecuteLensDistort", 120f);
-        Invoke("ExecuteLensDistort", 280f);
-        Invoke("ExecuteMannequinScare", 375f);
+        Invoke("ExecuteLensDistort", 130f);
+        Invoke("ExecuteLensDistort", 230f);
+        Invoke("ExecuteMannequinScare", 330f);
     }
 
-    private void ExecuteLensDistort()
+    public void ExecuteLensDistort()
     {
         lens.Jumpscare();
     }
 
-    private void ExecuteMannequinScare()
+    public void ExecuteMannequinScare()
     {
         mannequin.Jumpscare();
     }

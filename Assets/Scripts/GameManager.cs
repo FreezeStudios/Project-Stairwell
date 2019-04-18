@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("BloodSpawnChance", 0);
         PlayerPrefs.SetInt("PausePlayer", 0);
+        PlayerPrefs.SetFloat("BossPawnChance", 0);
     }
 
     private void Update()
