@@ -14,9 +14,9 @@ public class TimeManager : MonoBehaviour
         mannequin = GetComponent<MannequinScare>();
 
         //Starting Timers
-        Invoke("ExecuteLensDistort", 130f);
-        Invoke("ExecuteLensDistort", 230f);
-        Invoke("ExecuteMannequinScare", 330f);
+        Invoke("ExecuteLensDistort", 110f);
+        Invoke("ExecuteLensDistort", 210f);
+        Invoke("ExecuteMannequinScare", 310f);
     }
 
     public void ExecuteLensDistort()
